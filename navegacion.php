@@ -35,6 +35,8 @@
                 <li><a class="nav-link" href="php/datos.php">Amin. Catalogo</a></li>
                 <li><a class="nav-link" href="shop.php">Catalogo</a></li>
                 <li><a class="nav-link" href="about.php">Sobre Nosotros</a></li>
+                <li><a class="nav-link" href="login.php">Login</a></li>
+                <li><a class="nav-link" href="logout.php">Salir</a></li>
             </ul>
         </div>
     </div>
