@@ -78,7 +78,7 @@ $currentId = $currentId + 1;
     mysqli_close($conn);
     
     // Redirigir a la página de inicio
-    header("Location: datos.php");
+    header("Location: ../datos.php");
 } catch (\Throwable $th) {
     echo $th;
 }

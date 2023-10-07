@@ -22,7 +22,7 @@
 	<input type="checkbox" id="btn-modal">
 	<div class="container-modal">
 		<div class="content-modal">
-			<div><img src="images/promo modal.png" alt=""></div>
+			<div><img src="img/promo modal.png" alt=""></div>
 			<div class="btn-cerrar">
 				<label for="btn-modal">Cerrar</label>
 			</div>
@@ -70,7 +70,7 @@
 				</div>
 				<div class="col-lg-7">
 					<div class="hero-img-wrap">
-						<img src="images/rosa final portada.png" class="img-fluid">
+						<img src="img/rosa final portada.png" class="img-fluid">
 					</div>
 				</div>
 			</div>
@@ -91,36 +91,36 @@
 
 				<div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
 					<a class="product-item" href="shop facial.php">
-						<img src="images/facial final.png" class="img-fluid product-thumbnail">
+						<img src="img/facial final.png" class="img-fluid product-thumbnail">
 						<h3 class="product-title">Productos Faciales</h3>
 						<strong class="product-price">Ver</strong>
 
 						<span class="icon-cross">
-							<img src="images/cross.svg" class="img-fluid">
+							<img src="img/cross.svg" class="img-fluid">
 						</span>
 					</a>
 				</div>
 
 				<div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
 					<a class="product-item" href="shop corporal.php">
-						<img src="images/corporal final.png" class="img-fluid product-thumbnail">
+						<img src="img/corporal final.png" class="img-fluid product-thumbnail">
 						<h3 class="product-title">Productos Corporales</h3>
 						<strong class="product-price">Ver</strong>
 
 						<span class="icon-cross">
-							<img src="images/cross.svg" class="img-fluid">
+							<img src="img/cross.svg" class="img-fluid">
 						</span>
 					</a>
 				</div>
 
 				<div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
 					<a class="product-item" href="shop capilar.php">
-						<img src="images/capilar final.png" class="img-fluid product-thumbnail">
+						<img src="img/capilar final.png" class="img-fluid product-thumbnail">
 						<h3 class="product-title">Productos Capilares</h3>
 						<strong class="product-price">Ver</strong>
 
 						<span class="icon-cross">
-							<img src="images/cross.svg" class="img-fluid">
+							<img src="img/cross.svg" class="img-fluid">
 						</span>
 					</a>
 				</div>
@@ -144,7 +144,7 @@
 		</div>
 		<div class="carousel-inner">
 			<div class="carousel-item active">
-				<img src="images/cinco-bonitas-mujeres-africanas-caucasicas-tops-marrones-jeans-negros-miran-camara-fondo-beige.jpg"
+				<img src="img/cinco-bonitas-mujeres-africanas-caucasicas-tops-marrones-jeans-negros-miran-camara-fondo-beige.jpg"
 					class="d-block w-100" alt="...">
 				<div class="carousel-caption d-none d-md-block">
 					<h5>ABI Cosmetics</h5>
@@ -153,7 +153,7 @@
 				</div>
 			</div>
 			<div class="carousel-item">
-				<img src="images/hermosas-mujeres-jovenes-caucasicas-africanas-lenceria-posando-sobre-fondo-beige-concepto-estilo-vida.jpg"
+				<img src="img/hermosas-mujeres-jovenes-caucasicas-africanas-lenceria-posando-sobre-fondo-beige-concepto-estilo-vida.jpg"
 					class="d-block w-100" alt="...">
 				<div class="carousel-caption d-none d-md-block">
 					<h5>ABI Cosmetics</h5>
@@ -162,7 +162,7 @@
 				</div>
 			</div>
 			<div class="carousel-item">
-				<img src="images/lindas-mujeres-jovenes-adultas-interraciales-ropa-informal-charlando-ellas-sobre-fondo-beige.jpg"
+				<img src="img/lindas-mujeres-jovenes-adultas-interraciales-ropa-informal-charlando-ellas-sobre-fondo-beige.jpg"
 					class="d-block w-100" alt="...">
 				<div class="carousel-caption d-none d-md-block">
 					<h5>ABI Cosmetics</h5>
@@ -198,7 +198,7 @@
 						<div class="col-6 col-md-6">
 							<div class="feature">
 								<div class="icon">
-									<img src="images/truck.svg" alt="Image" class="imf-fluid">
+									<img src="img/truck.svg" alt="Image" class="imf-fluid">
 								</div>
 								<h3>Promoción de la Autoestima</h3>
 								<p>Nuestra empresa se enfoca en mejorar la autoestima y la confianza personal, ayudando
@@ -210,7 +210,7 @@
 						<div class="col-6 col-md-6">
 							<div class="feature">
 								<div class="icon">
-									<img src="images/bag.svg" alt="Image" class="imf-fluid">
+									<img src="img/bag.svg" alt="Image" class="imf-fluid">
 								</div>
 								<h3>Productos de Alta Calidad</h3>
 								<p>Ofrecemos productos de cuidado facial, capilar y corporal de alta calidad formulados
@@ -221,7 +221,7 @@
 						<div class="col-6 col-md-6">
 							<div class="feature">
 								<div class="icon">
-									<img src="images/support.svg" alt="Image" class="imf-fluid">
+									<img src="img/support.svg" alt="Image" class="imf-fluid">
 								</div>
 								<h3>Educación y Recursos</h3>
 								<p>Proporcionamos información educativa sobre el cuidado personal y la belleza para que
@@ -232,7 +232,7 @@
 						<div class="col-6 col-md-6">
 							<div class="feature">
 								<div class="icon">
-									<img src="images/return.svg" alt="Image" class="imf-fluid">
+									<img src="img/return.svg" alt="Image" class="imf-fluid">
 								</div>
 								<h3>Asesoramiento Personalizado</h3>
 								<p> Brindamos asesoramiento individualizado para ayudar a los clientes a seleccionar
@@ -246,7 +246,7 @@
 
 				<div class="col-lg-5">
 					<div class="img-wrap">
-						<img src="images/mujeres-africanas-caucasicas-alegres-diferentes-edades-camisas-blancas-riendose-mirando-camara-sobre-fondo-beige - copia.jpg"
+						<img src="img/mujeres-africanas-caucasicas-alegres-diferentes-edades-camisas-blancas-riendose-mirando-camara-sobre-fondo-beige - copia.jpg"
 							alt="Image" class="img-fluid">
 					</div>
 				</div>
@@ -261,12 +261,12 @@
 				<div class="col-lg-7 mb-5 mb-lg-0">
 					<div class="imgs-grid">
 						<div class="grid grid-1"><img
-								src="images/tres-jovenes-multirraciales-divirtiendose-posando-juntos-loft-moderno.jpg"
+								src="img/tres-jovenes-multirraciales-divirtiendose-posando-juntos-loft-moderno.jpg"
 								alt="Untree.co"></div>
 						<div class="grid grid-2"><img
-								src="images/agradable-joven-alegre-dama-rizada-pelo-oscuro-echando-cabeza-atras-mientras-rie-felizmente-ojos-cerrados-pie-sobre-pared-azul-manos-abajo.jpg"
+								src="img/agradable-joven-alegre-dama-rizada-pelo-oscuro-echando-cabeza-atras-mientras-rie-felizmente-ojos-cerrados-pie-sobre-pared-azul-manos-abajo.jpg"
 								alt="Untree.co"></div>
-						<div class="grid grid-3"><img src="images/mujeres copia.jpg" alt="Untree.co"></div>
+						<div class="grid grid-3"><img src="img/mujeres copia.jpg" alt="Untree.co"></div>
 					</div>
 				</div>
 				<div class="col-lg-5 ps-lg-5">
@@ -295,7 +295,7 @@
 				<div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
 					<div class="product-item-sm d-flex">
 						<div class="thumbnail">
-							<img src="images/faciales.png" alt="Image" class="img-fluid">
+							<img src="img/faciales.png" alt="Image" class="img-fluid">
 						</div>
 						<div class="pt-3">
 							<h3>Productos Faciales</h3>
@@ -309,7 +309,7 @@
 				<div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
 					<div class="product-item-sm d-flex">
 						<div class="thumbnail">
-							<img src="images/corporal.png" alt="Image" class="img-fluid">
+							<img src="img/corporal.png" alt="Image" class="img-fluid">
 						</div>
 						<div class="pt-3">
 							<h3>Productos Corporales</h3>
@@ -322,7 +322,7 @@
 				<div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
 					<div class="product-item-sm d-flex">
 						<div class="thumbnail">
-							<img src="images/capilar.png" alt="Image" class="img-fluid">
+							<img src="img/capilar.png" alt="Image" class="img-fluid">
 						</div>
 						<div class="pt-3">
 							<h3>Productos Capilares</h3>

@@ -17,29 +17,7 @@
 
 	<body>
 
-		<nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Furni navigation bar">
-
-			<div class="container">
-				<a class="navbar-brand" href="index.php">ABI Cosmetics<span>.</span></a>
-
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni" aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-
-				<div class="collapse navbar-collapse" id="navbarsFurni">
-					<ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
-						<li class="nav-item ">
-							<a class="nav-link" href="index.php">Inicio</a>
-						</li>
-						<li class="active"><a class="nav-link" href="shop.php">Catalogo</a></li>
-						<li><a class="nav-link" href="about.php">Sobre Nosotros</a></li>
-					</ul>
-
-					
-				</div>
-			</div>
-				
-		</nav>
+<?php require 'navegacion.php'; ?>
 
 			<div class="hero">
 				<div class="container">
@@ -56,261 +34,39 @@
 				</div>
 			</div>
 
-		
+		<?php
+// Incluye la configuración de la base de datos
+require_once "php/conexion.php";
 
+// Realiza una consulta SQL para obtener la lista de productos
+$data = "SELECT productos.id, productos.nombre, productos.precio, productos.id_categoria, productos.descripcion, foto_producto.img
+          FROM productos
+          INNER JOIN foto_producto ON productos.id = foto_producto.id_producto;";;
+$result = $conn->query($data);
+if ($result->num_rows > 0){
+?>
 		<div class="untree_co-section product-section before-footer-section">
 		    <div class="container">
 		      	<div class="row">
-
+					<?php while ($row = $result->fetch_assoc()):?>
 					<div class="col-12 col-md-4 col-lg-3 mb-5">
 						<a class="product-item" href="#">
-							<img src="images/serum 1.png" style="width: 210px; height: 230;" class="img-fluid product-thumbnail">
-							<h3 class="product-title">Serum Antioxidante</h3>
-							<strong class="product-price">$50.00</strong>
+							<img src="<?php echo 'images/' . $row['img']; ?>" style="width: 210px; height: 230;" class="img-fluid product-thumbnail">
+							<h3 class="product-title"><?php echo $row["nombre"];?></h3>
+							<strong class="product-price"><?php echo $row["precio"]; ?></strong>
 
 							<span class="icon-cross">
-								<img src="images/cross.svg" class="img-fluid">
-							</span>
-						</a>
-					</div> 
-						
-					<div class="col-12 col-md-4 col-lg-3 mb-5">
-						<a class="product-item" href="#">
-							<img src="images/serum 2.png" style="width: 165px; height: 185;" class="img-fluid product-thumbnail">
-							<h3 class="product-title">Serum Natural</h3>
-							<strong class="product-price">$50.00</strong>
-
-							<span class="icon-cross">
-								<img src="images/cross.svg" class="img-fluid">
-							</span>
-						</a>
-					</div> 
-
-					<div class="col-12 col-md-4 col-lg-3 mb-5">
-						<a class="product-item" href="#">
-							<img src="images/crema facial.png" style="width: 220px; height: 240;" class="img-fluid product-thumbnail">
-							<h3 class="product-title">Crema Facial Natural</h3>
-							<strong class="product-price">$78.00</strong>
-
-							<span class="icon-cross">
-								<img src="images/cross.svg" class="img-fluid">
+								<img src="img/cross.svg" class="img-fluid">
 							</span>
 						</a>
 					</div>
-
-					<div class="col-12 col-md-4 col-lg-3 mb-5">
-						<a class="product-item" href="#">
-							<img src="images/crema facial larga.png" style="width: 153px; height: 170;" class="img-fluid product-thumbnail">
-							<h3 class="product-title">Tratamiento Night Facial</h3>
-							<strong class="product-price">$43.00</strong>
-
-							<span class="icon-cross">
-								<img src="images/cross.svg" class="img-fluid">
-							</span>
-						</a>
-					</div>
-
-
-					<div class="col-12 col-md-4 col-lg-3 mb-5">
-						<a class="product-item" href="#">
-							<img src="images/crema aloe pequeña.png" style="width: 270px; height: 270;" class="img-fluid product-thumbnail">
-							<h3 class="product-title">Crema Facial Alore Vera</h3>
-							<strong class="product-price">$50.00</strong>
-
-							<span class="icon-cross">
-								<img src="images/cross.svg" class="img-fluid">
-							</span>
-						</a>
-					</div> 
-						
-					<div class="col-12 col-md-4 col-lg-3 mb-5">
-						<a class="product-item" href="#">
-							<img src="images/crema aloe larga.png" style="width: 128px; height: 148;" class="img-fluid product-thumbnail">
-							<h3 class="product-title">Tratamiento Facial Aloe Vera</h3>
-							<strong class="product-price">$50.00</strong>
-
-							<span class="icon-cross">
-								<img src="images/cross.svg" class="img-fluid">
-							</span>
-						</a>
-					</div> 
-
-					<div class="col-12 col-md-4 col-lg-3 mb-5">
-						<a class="product-item" href="#">
-							<img src="images/promo facial.png" class="img-fluid product-thumbnail">
-							<h3 class="product-title">Promo Aloe Vera</h3>
-							<strong class="product-price">$780.00</strong>
-
-							<span class="icon-cross">
-								<img src="images/cross.svg" class="img-fluid">
-							</span>
-						</a>
-					</div>
-
-					<div class="col-12 col-md-4 col-lg-3 mb-5">
-						<a class="product-item" href="#">
-							<img src="images/promo facial 2.png" class="img-fluid product-thumbnail">
-							<h3 class="product-title">Promo Natural</h3>
-							<strong class="product-price">$430.00</strong>
-
-							<span class="icon-cross">
-								<img src="images/cross.svg" class="img-fluid">
-							</span>
-						</a>
-					</div>
-			
-								<div class="col-12 col-md-4 col-lg-3 mb-5">
-									<a class="product-item" href="#">
-										<img src="images/crema con caja corporal.png" style="width: 210px; height: 230;" class="img-fluid product-thumbnail">
-										<h3 class="product-title">Serum Antioxidante</h3>
-										<strong class="product-price">$50.00</strong>
-			
-										<span class="icon-cross">
-											<img src="images/cross.svg" class="img-fluid">
-										</span>
-									</a>
-								</div> 
-									
-								<div class="col-12 col-md-4 col-lg-3 mb-5">
-									<a class="product-item" href="#">
-										<img src="images/crema corporal naranja.png" style="width: 210px; height: 230;" class="img-fluid product-thumbnail">
-										<h3 class="product-title">Serum Natural</h3>
-										<strong class="product-price">$50.00</strong>
-			
-										<span class="icon-cross">
-											<img src="images/cross.svg" class="img-fluid">
-										</span>
-									</a>
-								</div> 
-			
-								<div class="col-12 col-md-4 col-lg-3 mb-5">
-									<a class="product-item" href="#">
-										<img src="images/crema corporal natural.png" style="width: 210px; height: 230;" class="img-fluid product-thumbnail">
-										<h3 class="product-title">Crema Facial Natural</h3>
-										<strong class="product-price">$78.00</strong>
-			
-										<span class="icon-cross">
-											<img src="images/cross.svg" class="img-fluid">
-										</span>
-									</a>
-								</div>
-			
-								<div class="col-12 col-md-4 col-lg-3 mb-5">
-									<a class="product-item" href="#">
-										<img src="images/promo naranja.png" style="width: 210px; height: 230;" class="img-fluid product-thumbnail">
-										<h3 class="product-title">Tratamiento Night Facial</h3>
-										<strong class="product-price">$43.00</strong>
-			
-										<span class="icon-cross">
-											<img src="images/cross.svg" class="img-fluid">
-										</span>
-									</a>
-								</div>
-								<!-- End Column 4 -->
-			
-			
-								<!-- Start Column 1 -->
-								<div class="col-12 col-md-4 col-lg-3 mb-5">
-									<a class="product-item" href="#">
-										<img src="images/gel corporal.png" style="width: 210px; height: 230;" class="img-fluid product-thumbnail">
-										<h3 class="product-title">Crema Facial Alore Vera</h3>
-										<strong class="product-price">$50.00</strong>
-			
-										<span class="icon-cross">
-											<img src="images/cross.svg" class="img-fluid">
-										</span>
-									</a>
-								</div> 
-									
-								<div class="col-12 col-md-4 col-lg-3 mb-5">
-									<a class="product-item" href="#">
-										<img src="images/promo corporal dos.png" style="width: 210px; height: 230;" class="img-fluid product-thumbnail">
-										<h3 class="product-title">Tratamiento Facial Aloe Vera</h3>
-										<strong class="product-price">$50.00</strong>
-			
-										<span class="icon-cross">
-											<img src="images/cross.svg" class="img-fluid">
-										</span>
-									</a>
-								</div> 
-			
-								<div class="col-12 col-md-4 col-lg-3 mb-5">
-									<a class="product-item" href="#">
-										<img src="images/crema corporal tapa verde.png" style="width: 210px; height: 230;" class="img-fluid product-thumbnail">
-										<h3 class="product-title">Promo Aloe Vera</h3>
-										<strong class="product-price">$780.00</strong>
-			
-										<span class="icon-cross">
-											<img src="images/cross.svg" class="img-fluid">
-										</span>
-									</a>
-								</div>
-			
-								<div class="col-12 col-md-4 col-lg-3 mb-5">
-									<a class="product-item" href="#">
-										<img src="images/tratamiento y crema corporal.png" style="width: 210px; height: 230;" class="img-fluid product-thumbnail">
-										<h3 class="product-title">Promo Natural</h3>
-										<strong class="product-price">$430.00</strong>
-			
-										<span class="icon-cross">
-											<img src="images/cross.svg" class="img-fluid">
-										</span>
-									</a>
-								</div>
-
-					<div class="col-12 col-md-4 col-lg-3 mb-5">
-						<a class="product-item" href="#">
-							<img src="images/shampoo capilar.png" style="width: 210px; height: 230;" class="img-fluid product-thumbnail">
-							<h3 class="product-title">Acondicionador</h3>
-							<strong class="product-price">$50.00</strong>
-
-							<span class="icon-cross">
-								<img src="images/cross.svg" class="img-fluid">
-							</span>
-						</a>
-					</div> 
-						
-					<div class="col-12 col-md-4 col-lg-3 mb-5">
-						<a class="product-item" href="#">
-							<img src="images/crema corporal natural.png" style="width: 210px; height: 230;" class="img-fluid product-thumbnail">
-							<h3 class="product-title">Shampoo Natural</h3>
-							<strong class="product-price">$50.00</strong>
-
-							<span class="icon-cross">
-								<img src="images/cross.svg" class="img-fluid">
-							</span>
-						</a>
-					</div> 
-
-					<div class="col-12 col-md-4 col-lg-3 mb-5">
-						<a class="product-item" href="#">
-							<img src="images/Shampoo anaranjado.png" style="width: 210px; height: 230;" class="img-fluid product-thumbnail">
-							<h3 class="product-title">Shampoo de Naranja</h3>
-							<strong class="product-price">$78.00</strong>
-
-							<span class="icon-cross">
-								<img src="images/cross.svg" class="img-fluid">
-							</span>
-						</a>
-					</div>
-
-					<div class="col-12 col-md-4 col-lg-3 mb-5">
-						<a class="product-item" href="#">
-							<img src="images/Shampoo tres capilar.png" style="width: 210px; height: 230;" class="img-fluid product-thumbnail">
-							<h3 class="product-title">Tratamiento Capilar</h3>
-							<strong class="product-price">$43.00</strong>
-
-							<span class="icon-cross">
-								<img src="images/cross.svg" class="img-fluid">
-							</span>
-						</a>
-					</div>
-			
-
-
+					<?php endwhile ?> 
 		      	</div>
 		    </div>
 		</div>
+	<?php } else {
+			echo "<p class='text-danger'>No hay registros</p>";
+	}?>
 
 
 

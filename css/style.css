@@ -323,7 +323,7 @@ a {
       width: 35px;
       height: 35px;
       display: inline-block;
-      background: product;
+      background: #000;
       bottom: 15px;
       left: 50%;
       -webkit-transform: translateX(-50%);

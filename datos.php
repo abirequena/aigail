@@ -20,12 +20,12 @@
 
 <body>
   <?php
-  include '../navegacion.php';
+  include 'navegacion.php';
   ?>
   <div class="container text-center">
     <div class="row row-cols-2">
       <div class="col">
-        <form action="recibir_datos.php" method="POST" class="row g-3" enctype="multipart/form-data">
+        <form action="php/recibir_datos.php" method="POST" class="row g-3" enctype="multipart/form-data">
           <div class="col-md-6">
             <label for="inputnombre" class="form-label">Nombre</label>
             <input type="text" name="inputnombre" required class="form-control" id="inputnombre">
@@ -45,7 +45,7 @@
               <option selected>Choose...</option>
               <option>
                 <?php
-                require 'conexion.php';
+                require 'php/conexion.php';
                 $query = $conn->query("SELECT * FROM categorias");
                 while ($valores = mysqli_fetch_array($query)) {
                   echo '<option value="' . $valores['id'] . '">' . $valores['nombre_categoria'] . '</option>';
@@ -68,11 +68,7 @@
       <!-- mostrar datos  -->
       <div class="col">
         <?php
-        include('conexion.php');
-        $sqlQuery = "SELECT  p.*, p.id AS idproducto, i.* FROM productos AS p
-            INNER JOIN foto_producto AS i
-            ON p.id = i.id_producto
-            GROUP BY p.id";
+        include('php/conexion.php');
         $data = "SELECT productos.id, productos.nombre, productos.precio, productos.id_categoria, productos.descripcion, foto_producto.img
           FROM productos
           INNER JOIN foto_producto ON productos.id = foto_producto.id_producto;";
@@ -115,7 +111,7 @@
                     <?php echo $Data['id_categoria']; ?>
                   </td>
                   <td>
-                    <img class="img-fluid" src="<?php echo '../images/'.$Data['img']; ?>" alt="">                    
+                    <img class="img-fluid" src="<?php echo 'images/'.$Data['img']; ?>" alt="">                    
                   </td>
                   <td>
                     <button class="btn btn-danger"><i class="bi bi-trash-fill text-danger"></i></button>
