@@ -53,7 +53,7 @@ if ($result->num_rows > 0){
 						<a class="product-item" href="#">
 							<img src="<?php echo 'images/' . $row['img']; ?>" style="width: 210px; height: 230;" class="img-fluid product-thumbnail">
 							<h3 class="product-title"><?php echo $row["nombre"];?></h3>
-							<strong class="product-price"><?php echo '$'.number_format($row["precio"],2); ?></strong>
+							<strong class="product-price"><?php echo '$'.number_format($row["precio"],1); ?></strong>
 
 							<span class="icon-cross">
 								<img src="img/cross.svg" class="img-fluid">

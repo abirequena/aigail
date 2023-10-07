@@ -105,7 +105,7 @@
                     <?php echo $Data['descripcion']; ?>
                   </td>
                   <td>
-                    <?php echo $Data['precio']; ?>
+                    <?php echo '$' . number_format($Data["precio"], 1); ?>
                   </td>
                   <td>
                     <?php echo $Data['id_categoria']; ?>
