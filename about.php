@@ -33,7 +33,7 @@
 					</div>
 					<div class="col-lg-7">
 						<div class="hero-img-wrap">
-							<img src="images/rosa final portada.png" class="img-fluid">
+							<img src="img/rosa final portada.png" class="img-fluid">
 						</div>
 					</div>
 				</div>
@@ -53,7 +53,7 @@
 					<div class="col-6 col-md-6">
 						<div class="feature">
 							<div class="icon">
-								<img src="images/truck.svg" alt="Image" class="imf-fluid">
+								<img src="img/truck.svg" alt="Image" class="imf-fluid">
 							</div>
 							<h3>Promoción de la Autoestima</h3>
 							<p>Nuestra empresa se enfoca en mejorar la autoestima y la confianza personal, ayudando a las personas a sentirse mejor consigo mismas en todos los aspectos de sus vidas.</p>
@@ -63,7 +63,7 @@
 					<div class="col-6 col-md-6">
 						<div class="feature">
 							<div class="icon">
-								<img src="images/bag.svg" alt="Image" class="imf-fluid">
+								<img src="img/bag.svg" alt="Image" class="imf-fluid">
 							</div>
 							<h3>Productos de Alta Calidad</h3>
 							<p>Ofrecemos productos de cuidado facial, capilar y corporal de alta calidad formulados con ingredientes naturales y seguros.</p>
@@ -73,7 +73,7 @@
 					<div class="col-6 col-md-6">
 						<div class="feature">
 							<div class="icon">
-								<img src="images/support.svg" alt="Image" class="imf-fluid">
+								<img src="img/support.svg" alt="Image" class="imf-fluid">
 							</div>
 							<h3>Educación y Recursos</h3>
 							<p>Proporcionamos información educativa sobre el cuidado personal y la belleza para que los clientes tomen decisiones informadas sobre su rutina de belleza.</p>
@@ -83,7 +83,7 @@
 					<div class="col-6 col-md-6">
 						<div class="feature">
 							<div class="icon">
-								<img src="images/return.svg" alt="Image" class="imf-fluid">
+								<img src="img/return.svg" alt="Image" class="imf-fluid">
 							</div>
 							<h3>Asesoramiento Personalizado</h3>
 							<p> Brindamos asesoramiento individualizado para ayudar a los clientes a seleccionar productos adecuados y desarrollar rutinas de cuidado personal adaptadas a sus necesidades.</p>
@@ -95,7 +95,7 @@
 
 			<div class="col-lg-5">
 				<div class="img-wrap">
-					<img src="images/mujeres-africanas-caucasicas-alegres-diferentes-edades-camisas-blancas-riendose-mirando-camara-sobre-fondo-beige - copia.jpg" alt="Image" class="img-fluid">
+					<img src="img/mujeres-africanas-caucasicas-alegres-diferentes-edades-camisas-blancas-riendose-mirando-camara-sobre-fondo-beige - copia.jpg" alt="Image" class="img-fluid">
 				</div>
 			</div>
 
@@ -110,9 +110,9 @@
 		<div class="row justify-content-between">
 			<div class="col-lg-7 mb-5 mb-lg-0">
 				<div class="imgs-grid">
-					<div class="grid grid-1"><img src="images/tres-jovenes-multirraciales-divirtiendose-posando-juntos-loft-moderno.jpg" alt="Untree.co"></div>
-					<div class="grid grid-2"><img src="images/agradable-joven-alegre-dama-rizada-pelo-oscuro-echando-cabeza-atras-mientras-rie-felizmente-ojos-cerrados-pie-sobre-pared-azul-manos-abajo.jpg" alt="Untree.co"></div>
-					<div class="grid grid-3"><img src="images/mujeres copia.jpg" alt="Untree.co"></div>
+					<div class="grid grid-1"><img src="img/tres-jovenes-multirraciales-divirtiendose-posando-juntos-loft-moderno.jpg" alt="Untree.co"></div>
+					<div class="grid grid-2"><img src="img/agradable-joven-alegre-dama-rizada-pelo-oscuro-echando-cabeza-atras-mientras-rie-felizmente-ojos-cerrados-pie-sobre-pared-azul-manos-abajo.jpg" alt="Untree.co"></div>
+					<div class="grid grid-3"><img src="img/mujeres copia.jpg" alt="Untree.co"></div>
 				</div>
 			</div>
 			<div class="col-lg-5 ps-lg-5">
@@ -140,7 +140,7 @@
 			<div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
 				<div class="product-item-sm d-flex">
 					<div class="thumbnail">
-						<img src="images/faciales.png" alt="Image" class="img-fluid">
+						<img src="img/faciales.png" alt="Image" class="img-fluid">
 					</div>
 					<div class="pt-3">
 						<h3>Productos Faciales</h3>
@@ -153,7 +153,7 @@
 			<div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
 				<div class="product-item-sm d-flex">
 					<div class="thumbnail">
-						<img src="images/corporal.png" alt="Image" class="img-fluid">
+						<img src="img/corporal.png" alt="Image" class="img-fluid">
 					</div>
 					<div class="pt-3">
 						<h3>Productos Corporales</h3>
@@ -166,7 +166,7 @@
 			<div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
 				<div class="product-item-sm d-flex">
 					<div class="thumbnail">
-						<img src="images/capilar.png" alt="Image" class="img-fluid">
+						<img src="img/capilar.png" alt="Image" class="img-fluid">
 					</div>
 					<div class="pt-3">
 						<h3>Productos Capilares</h3>

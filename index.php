@@ -90,7 +90,7 @@
 				</div>
 
 				<div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
-					<a class="product-item" href="shop facial.php">
+					<a class="product-item" href="shop-facial.php">
 						<img src="img/facial final.png" class="img-fluid product-thumbnail">
 						<h3 class="product-title">Productos Faciales</h3>
 						<strong class="product-price">Ver</strong>
@@ -102,7 +102,7 @@
 				</div>
 
 				<div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
-					<a class="product-item" href="shop corporal.php">
+					<a class="product-item" href="shop-corporal.php">
 						<img src="img/corporal final.png" class="img-fluid product-thumbnail">
 						<h3 class="product-title">Productos Corporales</h3>
 						<strong class="product-price">Ver</strong>
@@ -114,7 +114,7 @@
 				</div>
 
 				<div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
-					<a class="product-item" href="shop capilar.php">
+					<a class="product-item" href="shop-capilar.php">
 						<img src="img/capilar final.png" class="img-fluid product-thumbnail">
 						<h3 class="product-title">Productos Capilares</h3>
 						<strong class="product-price">Ver</strong>
@@ -301,7 +301,7 @@
 							<h3>Productos Faciales</h3>
 							<p> amplia gama de productos de cuidado facial de alta calidad formulados con ingredientes
 								naturales y seguros. </p>
-							<p><a href="shop facial.php">Ver</a></p>
+							<p><a href="shop-facial.php">Ver</a></p>
 						</div>
 					</div>
 				</div>
@@ -314,7 +314,7 @@
 						<div class="pt-3">
 							<h3>Productos Corporales</h3>
 							<p> línea de productos corporales diseñados para hidratar y suavizar la piel. </p>
-							<p><a href="shop corporal.php">Ver</a></p>
+							<p><a href="shop-corporal.php">Ver</a></p>
 						</div>
 					</div>
 				</div>
@@ -327,7 +327,7 @@
 						<div class="pt-3">
 							<h3>Productos Capilares</h3>
 							<p>productos capilares de alta calidad que nutren y revitalizan el cabello. </p>
-							<p><a href="shop capilar.php">Ver</a></p>
+							<p><a href="shop-capilar.php">Ver</a></p>
 						</div>
 					</div>
 				</div>
