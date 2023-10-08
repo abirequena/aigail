@@ -27,6 +27,10 @@
       <div class="col">
         <form action="php/recibir_datos.php" method="POST" class="row g-3" enctype="multipart/form-data">
           <div class="col-md-6">
+            <label for="inputId" class="form-label">Id</label>
+            <input type="text" name="inputId" required class="form-control" id="inputId">
+          </div>
+          <div class="col-md-6">
             <label for="inputnombre" class="form-label">Nombre</label>
             <input type="text" name="inputnombre" required class="form-control" id="inputnombre">
           </div>
@@ -114,8 +118,8 @@
                     <img class="img-fluid" src="<?php echo 'images/'.$Data['img']; ?>" alt="">                    
                   </td>
                   <td>
-                    <button class="btn btn-danger"><i class="bi bi-trash-fill text-danger"></i></button>
-                    <button class="btn btn-info"><i class="bi bi-pencil text-info"></i></button>
+                    <a href="eliminar_datos.php?id=<?php echo $Data['id']; ?>" class="btn btn-danger"><i class="bi bi-trash-fill text-danger"></i></a>
+                    <a class="btn btn-info"><i class="bi bi-pencil text-info"></i></a>
                   </td>
                 </tr>
               <?php endwhile ?>

@@ -8,16 +8,7 @@ $nombre = ucwords($_POST['inputnombre']);
 $precio = (int) $_POST['inputPrecio'];
 $descripcion = trim(ucwords($_POST['inputdesc']));
 $categoria = $_POST['inputCategoria'];
-$id = $conn->query("SELECT COUNT(*) as total_registros
-FROM productos;");
-if ($id->num_rows > 0) {
-    // Obtiene el resultado como un arreglo asociativo
-    $row = $id->fetch_assoc();
-
-    
-    $currentId = (int)$row["total_registros"];
-}
-$currentId = $currentId + 1;
+$id = (int)$_POST['inputId'];
     
     try {
     
@@ -56,7 +47,7 @@ $currentId = $currentId + 1;
                     move_uploaded_file($sourceFoto, $resultadoFotos);
     
                     // Insertar información del archivo en la base de datos
-                    $sql = "INSERT INTO foto_producto (img, id_producto) VALUES ('{$nombreFoto}', '{$currentId}')";
+                    $sql = "INSERT INTO foto_producto (img, id_producto) VALUES ('{$nombreFoto}', '{$id}')";
                     mysqli_query($conn, $sql);
     
                 } else {
